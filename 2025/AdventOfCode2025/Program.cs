@@ -1,5 +1,8 @@
 ﻿using AdventOfCode2025;
 using AdventOfCode2025.Day1;
+using AdventOfCode2025.Day2;
+using AdventOfCode2025.Day3;
+using AdventOfCode2025.Day4;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -10,6 +13,6 @@ var host =  builder.Build();
 using var scope = host.Services.CreateScope();
 var provider = scope.ServiceProvider;
 
-var day1 = provider.GetService<Day1>();
+var day = provider.GetService<Day4>();
 
-Console.WriteLine(day1.SolvePart2("./Day1/input.txt"));
+Console.WriteLine(day.SolvePart1("./Day4/input.txt"));

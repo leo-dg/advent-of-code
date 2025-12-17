@@ -2,7 +2,7 @@
 
 namespace AdventOfCode2025.Day1
 {
-    public class Day1
+    public class Day1 : IDay<int>
     {
         private readonly IReaderService _reader;        
 
