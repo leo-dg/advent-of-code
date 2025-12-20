@@ -12,6 +12,7 @@ namespace AdventOfCode2025
             services.AddScoped<Day2.Day2>();
             services.AddScoped<Day3.Day3>();
             services.AddScoped<Day4.Day4>();
+            services.AddScoped<Day5.Day5>();
 
             return services;
         }
